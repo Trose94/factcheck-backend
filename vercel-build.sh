@@ -1,5 +1,6 @@
 #!/bin/bash
 # Install dependencies with specific flags to avoid build issues
 pip install --upgrade pip
-pip install -r requirements.txt --no-build-isolation
+pip install wheel setuptools
+pip install -r requirements.txt
 echo "Build completed" 
